@@ -95,7 +95,6 @@ describe("Spot.IM - Job interview exricse", async function(){
  		    let dataMsgId = await driver.findElement(By.css('div.sppre_message-view.sppre_depth-0.sppre_conversation-message'));
 		    await dataMsgId.getAttribute('data-message-id').then(async function (id) {
 		    	await console.log('Published comment ID: ' + id);
-		    	// await expect(text.to.equal('Bla.. Bla.. Bla..'));
 			});
   		} finally {
   		    return null;
